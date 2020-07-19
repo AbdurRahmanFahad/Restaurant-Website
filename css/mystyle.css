@@ -208,6 +208,56 @@ body {
   /****************************************** END MENU CATEGORIES PAGE ******************************************/
 
 
+  /******************************************* SINGLE CATEGORY PAGE *******************************************/
+.menu-item-tile {
+    margin-bottom: 25px;
+  }
+  .menu-item-tile hr {
+    width: 80%;
+  }
+  .menu-item-tile .menu-item-price {
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+  }
+  .menu-item-tile .menu-item-price span {
+    font-size: .6em;
+  }
+  .menu-item-photo {
+    position: relative;
+    border: 2px solid #353132; 
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+    border-radius: 8px;
+  }
+  .menu-item-photo div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    border-radius: 5px;
+    background-color: #5a5f57;
+    opacity: .8;
+    text-align: center;
+  }
+  .menu-item-description {
+    padding-right: 30px;
+  }
+  h3.menu-item-title {
+    margin: 0 0 10px;
+  }
+  .menu-item-details {
+    font-size: .9em;
+  }
+  /******************************************* END SINGLE CATEGORY PAGE *******************************************/
+  
+
+
   /********** Large devices only **********/
 @media (min-width: 1200px) {
     .container .jumbotron {
@@ -235,7 +285,7 @@ body {
   /* End Home Page */
 }
 
-/********** Small devices only **********/
+/******************************************* Small devices only *******************************************/
 @media (min-width: 768px) and (max-width: 991px) {
  /* Home Page */
  .container .jumbotron {
@@ -245,7 +295,7 @@ body {
   /* End Home Page */
 }
 
-/********** Extra small devices only **********/
+/********************************* Extra small devices only *********************************/
 @media (max-width: 767px) {
   /* Header */
   .navbar-brand {
@@ -313,7 +363,21 @@ body {
   }
   /* End Footer */
 
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
+
 }
+
+
+/********************************* smallest *********************************/
+
 
 @media (max-width: 479px) {
     /* Header */
