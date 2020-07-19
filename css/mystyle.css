@@ -9,6 +9,7 @@ body {
     background-color: rgba(27, 28, 29, 0.76);
     border-radius: 0;
     border: 0;
+    padding: 10px;
 }
 
 #logo-img {
@@ -86,9 +87,58 @@ body {
   }
 
 
+  .container .jumbotron {
+    box-shadow: 0 0 50px #80797c;
+    border: 2px solid #444243;
+    
+  }
+  
+
+  #menu-tile, #specials-tile, #map-tile {
+    border-radius: 10px;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #444243;
+    overflow: hidden;
+  }
+  #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+  }
+  
+  #menu-tile {
+    background: url('../images/menu-tile.jpg') no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    
+  }
+  #specials-tile {
+    background: url('../images/specials-tile.jpg') no-repeat;
+    background-position: center;
+    border-radius: 10px;
+  }
+  
+  #menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .7;
+  }
+
+
   /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+    .container .jumbotron {
+        background: url('../images/jumbotron_1200.jpg') no-repeat;
+        height: 726px;
+      }
 }
 
 /********** Medium devices only **********/
@@ -101,11 +151,23 @@ body {
     margin: 5px 5px 5px 0;
   }
   /* End Header */
+
+   /* Home Page */
+   .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 625px;
+  }
+  /* End Home Page */
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-
+ /* Home Page */
+ .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 468px;
+  }
+  /* End Home Page */
 }
 
 /********** Extra small devices only **********/
@@ -152,4 +214,30 @@ body {
   }
   /* End Header */
 
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  #menu-tile, #specials-tile {
+    width: 330px;
+    margin: 0 auto 15px;
+  }
+
 }
+
+@media (max-width: 479px) {
+    /* Header */
+    .navbar-brand h1 { /* Restaurant name */
+      padding-top: 5px;
+      font-size: 6vw;
+    }
+    /* End Header */
+    
+    /* Home page */
+    #menu-tile, #specials-tile {
+      width: 280px;
+      height: 280px;
+      margin: 0 auto 15px;
+    }
+  } 
